@@ -1,0 +1,167 @@
+/* Paleta Olimpo: Azul profundo, Blanco etéreo, Dorado */
+:root {
+  --gold: #FFD700;
+  --dark-blue: #0a1f3d;
+  --light-blue: #dbe9ff;
+  --white: #ffffff;
+  --dark-gray: #111;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: var(--dark-blue);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(to bottom, var(--dark-blue), var(--light-blue));
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin-top: 1rem;
+  opacity: 0.85;
+}
+
+.hero-strong {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.cta {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  background: var(--gold);
+  color: var(--dark-blue);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.cta:hover {
+  transform: scale(1.05);
+}
+
+.section {
+  padding: 5rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  border-left: 4px solid var(--gold);
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.light {
+  background: rgba(255,255,255,0.05);
+}
+
+.dark {
+  background: rgba(0,0,0,0.4);
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--gold);
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--light-blue);
+}
+
+.clean-list,
+.problem-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.clean-list li,
+.problem-list li {
+  margin-bottom: 0.6rem;
+}
+
+.problem-list li {
+  font-size: 1.15rem;
+}
+
+.steps li {
+  margin-bottom: 0.8rem;
+  padding-left: 1rem;
+}
+
+.emphasis {
+  margin-top: 1.5rem;
+  font-weight: bold;
+  color: var(--gold);
+}
+
+.muted {
+  opacity: 0.6;
+}
+
+.cta-section {
+  text-align: center;
+}
+
+.form {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.form input {
+  padding: 0.8rem;
+  min-width: 250px;
+  border-radius: 5px;
+  border: 1px solid var(--gold);
+  background: rgba(255,255,255,0.1);
+  color: var(--white);
+}
+
+.form input::placeholder {
+  color: var(--light-blue);
+}
+
+.form button {
+  padding: 0.8rem 1.5rem;
+  background: var(--gold);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  color: var(--dark-blue);
+}
